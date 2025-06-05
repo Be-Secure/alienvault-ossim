@@ -3,7 +3,7 @@ on:
  
   branch_protection_rule:
   push:
-    branches: [ "alfa_release" ]
+    branches: [ "alpha_release" ]
   workflow_dispatch:
 
 # Declare default permissions as read only.
@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: "alfa_release" # Ensure the correct branch is checked out
+          ref: "alpha_release" # Ensure the correct branch is checked out
 
       - name: Create CBOM
         uses: PQCA/cbomkit-action@v1.1.0
